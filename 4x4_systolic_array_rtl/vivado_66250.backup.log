@@ -1,0 +1,2017 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Apr 29 21:03:34 2025
+# Process ID: 66250
+# Current directory: /scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl
+# Command line: vivado
+# Log file: /scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado.log
+# Journal file: /scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado.jou
+# Running On: asicfab.ecn.purdue.edu, OS: Linux, CPU Frequency: 2295.805 MHz, CPU Physical cores: 32, Host memory: 269942 MB
+#-----------------------------------------------------------
+start_gui
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at /package/eda/xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at /package/eda/xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at /package/eda/xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at /package/eda/xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at /package/eda/xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at /package/eda/xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /package/eda/xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /package/eda/xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at /package/eda/xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /package/eda/xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at /package/eda/xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at /package/eda/xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at /package/eda/xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at /package/eda/xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at /package/eda/xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at /package/eda/xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /package/eda/xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /package/eda/xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at /package/eda/xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /package/eda/xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at /package/eda/xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at /package/eda/xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at /package/eda/xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at /package/eda/xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at /package/eda/xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at /package/eda/xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /package/eda/xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /package/eda/xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at /package/eda/xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /package/eda/xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at /package/eda/xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at /package/eda/xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at /package/eda/xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /package/eda/xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /package/eda/xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at /package/eda/xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /package/eda/xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+create_project vivado_simulation /scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation -part xc7a200tfbg676-2
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/package/eda/xilinx/Vivado/2023.2/data/ip'.
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 8239.180 ; gain = 168.027 ; free physical = 65845 ; free virtual = 167437
+set_property board_part xilinx.com:ac701:part0:1.4 [current_project]
+add_files -norecurse {/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v /scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array.v}
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse /scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'systolic_array_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/package/eda/xilinx/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'systolic_array_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj systolic_array_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pe
+INFO: [VRFC 10-2263] Analyzing Verilog file "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module systolic_array
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module systolic_array_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot systolic_array_tb_behav xil_defaultlib.systolic_array_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /package/eda/xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot systolic_array_tb_behav xil_defaultlib.systolic_array_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pe
+Compiling module xil_defaultlib.systolic_array_default
+Compiling module xil_defaultlib.systolic_array_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot systolic_array_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "systolic_array_tb_behav -key {Behavioral:sim_1:Functional:systolic_array_tb} -tclbatch {systolic_array_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source systolic_array_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+start test
+step =           0
+get_matrix_a[          3] =    13
+get_matrix_b[          3] =     4
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+step =           1
+get_matrix_a[          2] =     9
+get_matrix_a[          3] =    14
+get_matrix_b[          2] =     3
+get_matrix_b[          3] =     8
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+step =           2
+get_matrix_a[          1] =     5
+get_matrix_a[          2] =    10
+get_matrix_a[          3] =    15
+get_matrix_b[          1] =     2
+get_matrix_b[          2] =     7
+get_matrix_b[          3] =    12
+[        52          0          0          0 ]
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+step =           3
+get_matrix_a[          0] =     1
+get_matrix_a[          1] =     6
+get_matrix_a[          2] =    11
+get_matrix_a[          3] =    16
+get_matrix_b[          0] =     1
+get_matrix_b[          1] =     6
+get_matrix_b[          2] =    11
+get_matrix_b[          3] =    16
+[        79         56          0          0 ]
+[       104          0          0          0 ]
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+step =           4
+get_matrix_a[          0] =     2
+get_matrix_a[          1] =     7
+get_matrix_a[          2] =    12
+get_matrix_b[          0] =     5
+get_matrix_b[          1] =    10
+get_matrix_b[          2] =    15
+[        89         86         60          0 ]
+[       167        112          0          0 ]
+[       156          0          0          0 ]
+[         0          0          0          0 ]
+step =           5
+get_matrix_a[          0] =     3
+get_matrix_a[          1] =     8
+get_matrix_b[          0] =     9
+get_matrix_b[          1] =    14
+[        90         98         93         64 ]
+[       197        182        120          0 ]
+[       255        168          0          0 ]
+[       208          0          0          0 ]
+step =           6
+get_matrix_a[          0] =     4
+get_matrix_b[          0] =    13
+[        90        100        107        100 ]
+[       202        218        197        128 ]
+[       305        278        180          0 ]
+[       343        224          0          0 ]
+step =           7
+[        90        100        110        116 ]
+[       202        228        239        212 ]
+[       314        338        301        192 ]
+[       413        374        240          0 ]
+result:
+[        90        100        110        120 ]
+[       202        228        254        280 ]
+[       314        356        398        440 ]
+[       426        484        542        600 ]
+$finish called at time : 125 ns : File "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv" Line 117
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'systolic_array_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 8430.516 ; gain = 56.277 ; free physical = 65942 ; free virtual = 167544
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv:]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'systolic_array_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/package/eda/xilinx/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'systolic_array_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj systolic_array_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module systolic_array_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot systolic_array_tb_behav xil_defaultlib.systolic_array_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /package/eda/xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot systolic_array_tb_behav xil_defaultlib.systolic_array_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pe
+Compiling module xil_defaultlib.systolic_array_default
+Compiling module xil_defaultlib.systolic_array_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot systolic_array_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "systolic_array_tb_behav -key {Behavioral:sim_1:Functional:systolic_array_tb} -tclbatch {systolic_array_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source systolic_array_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+start test
+step =           0
+get_matrix_a[          3] =    13
+get_matrix_b[          3] =     4
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+step =           1
+get_matrix_a[          2] =     9
+get_matrix_a[          3] =    14
+get_matrix_b[          2] =     3
+get_matrix_b[          3] =     8
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+step =           2
+get_matrix_a[          1] =     5
+get_matrix_a[          2] =    10
+get_matrix_a[          3] =    15
+get_matrix_b[          1] =     2
+get_matrix_b[          2] =     7
+get_matrix_b[          3] =    12
+[        52          0          0          0 ]
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+step =           3
+get_matrix_a[          0] =     1
+get_matrix_a[          1] =     6
+get_matrix_a[          2] =    11
+get_matrix_a[          3] =    16
+get_matrix_b[          0] =     1
+get_matrix_b[          1] =     6
+get_matrix_b[          2] =    11
+get_matrix_b[          3] =    16
+[        79         56          0          0 ]
+[       104          0          0          0 ]
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+step =           4
+get_matrix_a[          0] =     2
+get_matrix_a[          1] =     7
+get_matrix_a[          2] =    12
+get_matrix_b[          0] =     5
+get_matrix_b[          1] =    10
+get_matrix_b[          2] =    15
+[        89         86         60          0 ]
+[       167        112          0          0 ]
+[       156          0          0          0 ]
+[         0          0          0          0 ]
+step =           5
+get_matrix_a[          0] =     3
+get_matrix_a[          1] =     8
+get_matrix_b[          0] =     9
+get_matrix_b[          1] =    14
+[        90         98         93         64 ]
+[       197        182        120          0 ]
+[       255        168          0          0 ]
+[       208          0          0          0 ]
+step =           6
+get_matrix_a[          0] =     4
+get_matrix_b[          0] =    13
+[        90        100        107        100 ]
+[       202        218        197        128 ]
+[       305        278        180          0 ]
+[       343        224          0          0 ]
+step =           7
+[        90        100        110        116 ]
+[       202        228        239        212 ]
+[       314        338        301        192 ]
+[       413        374        240          0 ]
+Matrix multiplication took 7 clock cycles.
+result:
+[        90        100        110        120 ]
+[       202        228        254        280 ]
+[       314        356        398        440 ]
+[       426        484        542        600 ]
+$finish called at time : 125 ns : File "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv" Line 131
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'systolic_array_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 8556.562 ; gain = 15.023 ; free physical = 60224 ; free virtual = 169793
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv:]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'systolic_array_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/package/eda/xilinx/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'systolic_array_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj systolic_array_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module systolic_array_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot systolic_array_tb_behav xil_defaultlib.systolic_array_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /package/eda/xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot systolic_array_tb_behav xil_defaultlib.systolic_array_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pe
+Compiling module xil_defaultlib.systolic_array_default
+Compiling module xil_defaultlib.systolic_array_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot systolic_array_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "systolic_array_tb_behav -key {Behavioral:sim_1:Functional:systolic_array_tb} -tclbatch {systolic_array_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source systolic_array_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+start test
+step =           0
+get_matrix_a[          3] =    13
+get_matrix_b[          3] =     4
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+step =           1
+get_matrix_a[          2] =     9
+get_matrix_a[          3] =    14
+get_matrix_b[          2] =     3
+get_matrix_b[          3] =     8
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+step =           2
+get_matrix_a[          1] =     5
+get_matrix_a[          2] =    10
+get_matrix_a[          3] =    15
+get_matrix_b[          1] =     2
+get_matrix_b[          2] =     7
+get_matrix_b[          3] =    12
+[        52          0          0          0 ]
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+step =           3
+get_matrix_a[          0] =     1
+get_matrix_a[          1] =     6
+get_matrix_a[          2] =    11
+get_matrix_a[          3] =    16
+get_matrix_b[          0] =     1
+get_matrix_b[          1] =     6
+get_matrix_b[          2] =    11
+get_matrix_b[          3] =    16
+[        79         56          0          0 ]
+[       104          0          0          0 ]
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+step =           4
+get_matrix_a[          0] =     2
+get_matrix_a[          1] =     7
+get_matrix_a[          2] =    12
+get_matrix_b[          0] =     5
+get_matrix_b[          1] =    10
+get_matrix_b[          2] =    15
+[        89         86         60          0 ]
+[       167        112          0          0 ]
+[       156          0          0          0 ]
+[         0          0          0          0 ]
+step =           5
+get_matrix_a[          0] =     3
+get_matrix_a[          1] =     8
+get_matrix_b[          0] =     9
+get_matrix_b[          1] =    14
+[        90         98         93         64 ]
+[       197        182        120          0 ]
+[       255        168          0          0 ]
+[       208          0          0          0 ]
+step =           6
+get_matrix_a[          0] =     4
+get_matrix_b[          0] =    13
+[        90        100        107        100 ]
+[       202        218        197        128 ]
+[       305        278        180          0 ]
+[       343        224          0          0 ]
+step =           7
+[        90        100        110        116 ]
+[       202        228        239        212 ]
+[       314        338        301        192 ]
+[       413        374        240          0 ]
+Matrix multiplication took 7 clock cycles.
+result:
+[        90        100        110        120 ]
+[       202        228        254        280 ]
+[       314        356        398        440 ]
+[       426        484        542        600 ]
+$finish called at time : 125 ns : File "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv" Line 128
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'systolic_array_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 8558.539 ; gain = 1.977 ; free physical = 60257 ; free virtual = 169828
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv:]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'systolic_array_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/package/eda/xilinx/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'systolic_array_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj systolic_array_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module systolic_array_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot systolic_array_tb_behav xil_defaultlib.systolic_array_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /package/eda/xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot systolic_array_tb_behav xil_defaultlib.systolic_array_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pe
+Compiling module xil_defaultlib.systolic_array_default
+Compiling module xil_defaultlib.systolic_array_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot systolic_array_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "systolic_array_tb_behav -key {Behavioral:sim_1:Functional:systolic_array_tb} -tclbatch {systolic_array_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source systolic_array_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+start test
+step =           0
+get_matrix_a[          3] =    13
+get_matrix_b[          3] =     4
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+step =           1
+get_matrix_a[          2] =     9
+get_matrix_a[          3] =    14
+get_matrix_b[          2] =     3
+get_matrix_b[          3] =     8
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+step =           2
+get_matrix_a[          1] =     5
+get_matrix_a[          2] =    10
+get_matrix_a[          3] =    15
+get_matrix_b[          1] =     2
+get_matrix_b[          2] =     7
+get_matrix_b[          3] =    12
+[        52          0          0          0 ]
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+step =           3
+get_matrix_a[          0] =     1
+get_matrix_a[          1] =     6
+get_matrix_a[          2] =    11
+get_matrix_a[          3] =    16
+get_matrix_b[          0] =     1
+get_matrix_b[          1] =     6
+get_matrix_b[          2] =    11
+get_matrix_b[          3] =    16
+[        79         56          0          0 ]
+[       104          0          0          0 ]
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+step =           4
+get_matrix_a[          0] =     2
+get_matrix_a[          1] =     7
+get_matrix_a[          2] =    12
+get_matrix_b[          0] =     5
+get_matrix_b[          1] =    10
+get_matrix_b[          2] =    15
+[        89         86         60          0 ]
+[       167        112          0          0 ]
+[       156          0          0          0 ]
+[         0          0          0          0 ]
+step =           5
+get_matrix_a[          0] =     3
+get_matrix_a[          1] =     8
+get_matrix_b[          0] =     9
+get_matrix_b[          1] =    14
+[        90         98         93         64 ]
+[       197        182        120          0 ]
+[       255        168          0          0 ]
+[       208          0          0          0 ]
+step =           6
+get_matrix_a[          0] =     4
+get_matrix_b[          0] =    13
+[        90        100        107        100 ]
+[       202        218        197        128 ]
+[       305        278        180          0 ]
+[       343        224          0          0 ]
+step =           7
+[        90        100        110        116 ]
+[       202        228        239        212 ]
+[       314        338        301        192 ]
+[       413        374        240          0 ]
+Matrix multiplication took 7 clock cycles.
+result:
+[        90        100        110        120 ]
+[       202        228        254        280 ]
+[       314        356        398        440 ]
+[       426        484        542        600 ]
+$finish called at time : 125 ns : File "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv" Line 128
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'systolic_array_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 8558.539 ; gain = 0.000 ; free physical = 60206 ; free virtual = 169792
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv:]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'systolic_array_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/package/eda/xilinx/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'systolic_array_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj systolic_array_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module systolic_array_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot systolic_array_tb_behav xil_defaultlib.systolic_array_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /package/eda/xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot systolic_array_tb_behav xil_defaultlib.systolic_array_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pe
+Compiling module xil_defaultlib.systolic_array_default
+Compiling module xil_defaultlib.systolic_array_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot systolic_array_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "systolic_array_tb_behav -key {Behavioral:sim_1:Functional:systolic_array_tb} -tclbatch {systolic_array_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source systolic_array_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+start test
+step =           0
+get_matrix_a[          3] =    13
+get_matrix_b[          3] =     4
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+step =           1
+get_matrix_a[          2] =     9
+get_matrix_a[          3] =    14
+get_matrix_b[          2] =     3
+get_matrix_b[          3] =     8
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+step =           2
+get_matrix_a[          1] =     5
+get_matrix_a[          2] =    10
+get_matrix_a[          3] =    15
+get_matrix_b[          1] =     2
+get_matrix_b[          2] =     7
+get_matrix_b[          3] =    12
+[        52          0          0          0 ]
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+step =           3
+get_matrix_a[          0] =     1
+get_matrix_a[          1] =     6
+get_matrix_a[          2] =    11
+get_matrix_a[          3] =    16
+get_matrix_b[          0] =     1
+get_matrix_b[          1] =     6
+get_matrix_b[          2] =    11
+get_matrix_b[          3] =    16
+[        79         56          0          0 ]
+[       104          0          0          0 ]
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+step =           4
+get_matrix_a[          0] =     2
+get_matrix_a[          1] =     7
+get_matrix_a[          2] =    12
+get_matrix_b[          0] =     5
+get_matrix_b[          1] =    10
+get_matrix_b[          2] =    15
+[        89         86         60          0 ]
+[       167        112          0          0 ]
+[       156          0          0          0 ]
+[         0          0          0          0 ]
+step =           5
+get_matrix_a[          0] =     3
+get_matrix_a[          1] =     8
+get_matrix_b[          0] =     9
+get_matrix_b[          1] =    14
+[        90         98         93         64 ]
+[       197        182        120          0 ]
+[       255        168          0          0 ]
+[       208          0          0          0 ]
+step =           6
+get_matrix_a[          0] =     4
+get_matrix_b[          0] =    13
+[        90        100        107        100 ]
+[       202        218        197        128 ]
+[       305        278        180          0 ]
+[       343        224          0          0 ]
+step =           7
+[        90        100        110        116 ]
+[       202        228        239        212 ]
+[       314        338        301        192 ]
+[       413        374        240          0 ]
+Matrix multiplication took 8 clock cycles.
+result:
+[        90        100        110        120 ]
+[       202        228        254        280 ]
+[       314        356        398        440 ]
+[       426        484        542        600 ]
+$finish called at time : 135 ns : File "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv" Line 129
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'systolic_array_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 8566.543 ; gain = 8.004 ; free physical = 60206 ; free virtual = 169797
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv:]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'systolic_array_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/package/eda/xilinx/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'systolic_array_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj systolic_array_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module systolic_array_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot systolic_array_tb_behav xil_defaultlib.systolic_array_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /package/eda/xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot systolic_array_tb_behav xil_defaultlib.systolic_array_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array.v" Line 1. Module systolic_array_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array.v" Line 1. Module systolic_array_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pe
+Compiling module xil_defaultlib.systolic_array_default
+Compiling module xil_defaultlib.systolic_array_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot systolic_array_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "systolic_array_tb_behav -key {Behavioral:sim_1:Functional:systolic_array_tb} -tclbatch {systolic_array_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source systolic_array_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+start test
+
+step = 0
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+
+step = 1
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+
+step = 2
+[ 52 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+
+step = 3
+[ 79 56 0 0 ]
+[ 104 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+
+step = 4
+[ 89 86 60 0 ]
+[ 167 112 0 0 ]
+[ 156 0 0 0 ]
+[ 0 0 0 0 ]
+
+step = 5
+[ 90 98 93 64 ]
+[ 197 182 120 0 ]
+[ 255 168 0 0 ]
+[ 208 0 0 0 ]
+
+step = 6
+[ 90 100 107 100 ]
+[ 202 218 197 128 ]
+[ 305 278 180 0 ]
+[ 343 224 0 0 ]
+
+step = 7
+[ 90 100 110 116 ]
+[ 202 228 239 212 ]
+[ 314 338 301 192 ]
+[ 413 374 240 0 ]
+Matrix multiplication took 8 clock cycles.
+
+Final product matrix:
+[ 90 100 110 120 ]
+[ 202 228 254 280 ]
+[ 314 356 398 440 ]
+[ 426 484 542 600 ]
+$finish called at time : 135 ns : File "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv" Line 158
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'systolic_array_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 8682.578 ; gain = 0.000 ; free physical = 60123 ; free virtual = 169771
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv:]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'systolic_array_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/package/eda/xilinx/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'systolic_array_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj systolic_array_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module systolic_array_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot systolic_array_tb_behav xil_defaultlib.systolic_array_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /package/eda/xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot systolic_array_tb_behav xil_defaultlib.systolic_array_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array.v" Line 1. Module systolic_array_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array.v" Line 1. Module systolic_array_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pe
+Compiling module xil_defaultlib.systolic_array_default
+Compiling module xil_defaultlib.systolic_array_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot systolic_array_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "systolic_array_tb_behav -key {Behavioral:sim_1:Functional:systolic_array_tb} -tclbatch {systolic_array_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source systolic_array_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+start test
+
+step = 0
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+
+step = 1
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+
+step = 2
+[ 1 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+
+step = 3
+[ 11 5 0 0 ]
+[ 2 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+
+step = 4
+[ 38 35 9 0 ]
+[ 14 10 0 0 ]
+[ 3 0 0 0 ]
+[ 0 0 0 0 ]
+
+step = 5
+[ 90 98 59 13 ]
+[ 44 46 18 0 ]
+[ 17 15 0 0 ]
+[ 4 0 0 0 ]
+
+step = 6
+[ 202 241 185 13 ]
+[ 88 116 78 26 ]
+[ 41 57 27 0 ]
+[ 4 20 0 0 ]
+Matrix multiplication took 7 clock cycles.
+
+Final product matrix:
+[ 1406 451 185 13 ]
+[ 184 417 218 26 ]
+[ 41 113 209 39 ]
+[ 4 20 36 52 ]
+$finish called at time : 125 ns : File "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv" Line 146
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'systolic_array_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 8682.578 ; gain = 0.000 ; free physical = 58372 ; free virtual = 168227
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv:]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'systolic_array_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/package/eda/xilinx/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'systolic_array_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj systolic_array_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module systolic_array_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot systolic_array_tb_behav xil_defaultlib.systolic_array_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /package/eda/xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot systolic_array_tb_behav xil_defaultlib.systolic_array_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array.v" Line 1. Module systolic_array_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array.v" Line 1. Module systolic_array_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pe
+Compiling module xil_defaultlib.systolic_array_default
+Compiling module xil_defaultlib.systolic_array_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot systolic_array_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "systolic_array_tb_behav -key {Behavioral:sim_1:Functional:systolic_array_tb} -tclbatch {systolic_array_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source systolic_array_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+start test
+
+step = 0
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+
+step = 1
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+
+step = 2
+[ 1 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+
+step = 3
+[ 11 5 0 0 ]
+[ 2 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+
+step = 4
+[ 38 35 9 0 ]
+[ 14 10 0 0 ]
+[ 3 0 0 0 ]
+[ 0 0 0 0 ]
+
+step = 5
+[ 90 98 59 13 ]
+[ 44 46 18 0 ]
+[ 17 15 0 0 ]
+[ 4 0 0 0 ]
+
+step = 6
+[ 202 241 185 13 ]
+[ 88 116 78 26 ]
+[ 41 57 27 0 ]
+[ 4 20 0 0 ]
+
+step = 7
+[ 382 451 185 13 ]
+[ 184 237 218 26 ]
+[ 41 113 97 39 ]
+[ 4 20 36 0 ]
+Matrix multiplication took 8 clock cycles.
+
+Final product matrix:
+[ 638 451 185 13 ]
+[ 184 417 218 26 ]
+[ 41 113 209 39 ]
+[ 4 20 36 52 ]
+$finish called at time : 135 ns : File "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv" Line 146
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'systolic_array_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 8701.582 ; gain = 19.004 ; free physical = 59533 ; free virtual = 169259
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv:]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'systolic_array_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/package/eda/xilinx/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'systolic_array_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj systolic_array_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module systolic_array_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot systolic_array_tb_behav xil_defaultlib.systolic_array_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /package/eda/xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot systolic_array_tb_behav xil_defaultlib.systolic_array_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array.v" Line 1. Module systolic_array_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array.v" Line 1. Module systolic_array_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pe
+Compiling module xil_defaultlib.systolic_array_default
+Compiling module xil_defaultlib.systolic_array_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot systolic_array_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "systolic_array_tb_behav -key {Behavioral:sim_1:Functional:systolic_array_tb} -tclbatch {systolic_array_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source systolic_array_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+start test
+
+step = 0
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+
+step = 1
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+
+step = 2
+[ 1 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+
+step = 3
+[ 11 5 0 0 ]
+[ 2 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+
+step = 4
+[ 38 35 9 0 ]
+[ 14 10 0 0 ]
+[ 3 0 0 0 ]
+[ 0 0 0 0 ]
+
+step = 5
+[ 90 98 59 13 ]
+[ 44 46 18 0 ]
+[ 17 15 0 0 ]
+[ 4 0 0 0 ]
+
+step = 6
+[ 202 241 185 13 ]
+[ 88 116 78 26 ]
+[ 41 57 27 0 ]
+[ 4 20 0 0 ]
+
+step = 7
+[ 382 451 185 13 ]
+[ 184 237 218 26 ]
+[ 41 113 97 39 ]
+[ 4 20 36 0 ]
+
+step = 8
+[ 638 451 185 13 ]
+[ 184 417 218 26 ]
+[ 41 113 209 39 ]
+[ 4 20 36 52 ]
+Matrix multiplication took 9 clock cycles.
+
+Final product matrix:
+[ 638 451 185 13 ]
+[ 184 417 218 26 ]
+[ 41 113 209 39 ]
+[ 4 20 36 52 ]
+$finish called at time : 145 ns : File "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv" Line 146
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'systolic_array_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 8701.582 ; gain = 0.000 ; free physical = 58355 ; free virtual = 168224
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv:]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'systolic_array_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/package/eda/xilinx/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'systolic_array_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj systolic_array_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module systolic_array_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot systolic_array_tb_behav xil_defaultlib.systolic_array_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /package/eda/xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot systolic_array_tb_behav xil_defaultlib.systolic_array_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array.v" Line 1. Module systolic_array_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array.v" Line 1. Module systolic_array_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pe
+Compiling module xil_defaultlib.systolic_array_default
+Compiling module xil_defaultlib.systolic_array_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot systolic_array_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "systolic_array_tb_behav -key {Behavioral:sim_1:Functional:systolic_array_tb} -tclbatch {systolic_array_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source systolic_array_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+start test
+
+step = 0
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+
+step = 1
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+
+step = 2
+[ 1 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+
+step = 3
+[ 11 5 0 0 ]
+[ 2 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+
+step = 4
+[ 38 35 9 0 ]
+[ 14 10 0 0 ]
+[ 3 0 0 0 ]
+[ 0 0 0 0 ]
+
+step = 5
+[ 90 98 59 13 ]
+[ 44 46 18 0 ]
+[ 17 15 0 0 ]
+[ 4 0 0 0 ]
+
+step = 6
+[ 202 241 185 13 ]
+[ 88 116 78 26 ]
+[ 41 57 27 0 ]
+[ 4 20 0 0 ]
+
+step = 7
+[ 382 451 185 13 ]
+[ 184 237 218 26 ]
+[ 41 113 97 39 ]
+[ 4 20 36 0 ]
+Matrix multiplication took 8 clock cycles.
+
+Final product matrix:
+[ 638 451 185 13 ]
+[ 184 417 218 26 ]
+[ 41 113 209 39 ]
+[ 4 20 36 52 ]
+$finish called at time : 135 ns : File "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv" Line 146
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'systolic_array_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 8708.582 ; gain = 0.992 ; free physical = 60010 ; free virtual = 169757
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv:]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'systolic_array_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/package/eda/xilinx/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'systolic_array_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj systolic_array_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module systolic_array_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot systolic_array_tb_behav xil_defaultlib.systolic_array_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /package/eda/xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot systolic_array_tb_behav xil_defaultlib.systolic_array_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array.v" Line 1. Module systolic_array_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array.v" Line 1. Module systolic_array_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pe
+Compiling module xil_defaultlib.systolic_array_default
+Compiling module xil_defaultlib.systolic_array_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot systolic_array_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "systolic_array_tb_behav -key {Behavioral:sim_1:Functional:systolic_array_tb} -tclbatch {systolic_array_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source systolic_array_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+start test
+
+step = 1
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+
+step = 2
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+
+step = 3
+[ 10 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+
+step = 4
+[ 37 30 0 0 ]
+[ 12 10 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+
+step = 5
+[ 89 93 50 0 ]
+[ 42 46 18 0 ]
+[ 14 15 0 0 ]
+[ 0 0 0 0 ]
+
+step = 6
+[ 201 236 176 0 ]
+[ 86 116 78 26 ]
+[ 38 57 27 0 ]
+[ 0 20 0 0 ]
+
+step = 7
+[ 381 446 176 0 ]
+[ 182 237 218 26 ]
+[ 38 113 97 39 ]
+[ 0 20 36 0 ]
+Matrix multiplication took 7 clock cycles.
+
+Final product matrix:
+[ 637 446 176 0 ]
+[ 182 417 218 26 ]
+[ 38 113 209 39 ]
+[ 0 20 36 52 ]
+$finish called at time : 125 ns : File "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv" Line 146
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'systolic_array_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 8727.598 ; gain = 16.988 ; free physical = 58467 ; free virtual = 168240
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv:]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'systolic_array_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/package/eda/xilinx/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'systolic_array_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj systolic_array_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module systolic_array_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot systolic_array_tb_behav xil_defaultlib.systolic_array_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /package/eda/xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot systolic_array_tb_behav xil_defaultlib.systolic_array_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array.v" Line 1. Module systolic_array_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array.v" Line 1. Module systolic_array_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pe
+Compiling module xil_defaultlib.systolic_array_default
+Compiling module xil_defaultlib.systolic_array_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot systolic_array_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "systolic_array_tb_behav -key {Behavioral:sim_1:Functional:systolic_array_tb} -tclbatch {systolic_array_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source systolic_array_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+start test
+
+step = 0
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+
+step = 1
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+
+step = 2
+[ 1 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+
+step = 3
+[ 11 5 0 0 ]
+[ 2 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+
+step = 4
+[ 38 35 9 0 ]
+[ 14 10 0 0 ]
+[ 3 0 0 0 ]
+[ 0 0 0 0 ]
+
+step = 5
+[ 90 98 59 13 ]
+[ 44 46 18 0 ]
+[ 17 15 0 0 ]
+[ 4 0 0 0 ]
+
+step = 6
+[ 202 241 185 13 ]
+[ 88 116 78 26 ]
+[ 41 57 27 0 ]
+[ 4 20 0 0 ]
+
+step = 7
+[ 382 451 185 13 ]
+[ 184 237 218 26 ]
+[ 41 113 97 39 ]
+[ 4 20 36 0 ]
+Matrix multiplication took 8 clock cycles.
+
+Final product matrix:
+[ 638 451 185 13 ]
+[ 184 417 218 26 ]
+[ 41 113 209 39 ]
+[ 4 20 36 52 ]
+$finish called at time : 135 ns : File "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv" Line 146
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'systolic_array_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 8749.598 ; gain = 16.992 ; free physical = 56371 ; free virtual = 166448
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv:]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'systolic_array_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/package/eda/xilinx/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'systolic_array_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj systolic_array_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module systolic_array_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot systolic_array_tb_behav xil_defaultlib.systolic_array_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /package/eda/xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot systolic_array_tb_behav xil_defaultlib.systolic_array_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array.v" Line 1. Module systolic_array_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array.v" Line 1. Module systolic_array_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v" Line 1. Module pe doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pe
+Compiling module xil_defaultlib.systolic_array_default
+Compiling module xil_defaultlib.systolic_array_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot systolic_array_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation/vivado_simulation.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "systolic_array_tb_behav -key {Behavioral:sim_1:Functional:systolic_array_tb} -tclbatch {systolic_array_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source systolic_array_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+start test
+
+step = 0
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+
+step = 1
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+
+step = 2
+[ 52 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+
+step = 3
+[ 79 56 0 0 ]
+[ 104 0 0 0 ]
+[ 0 0 0 0 ]
+[ 0 0 0 0 ]
+
+step = 4
+[ 89 86 60 0 ]
+[ 167 112 0 0 ]
+[ 156 0 0 0 ]
+[ 0 0 0 0 ]
+
+step = 5
+[ 90 98 93 64 ]
+[ 197 182 120 0 ]
+[ 255 168 0 0 ]
+[ 208 0 0 0 ]
+
+step = 6
+[ 90 100 107 100 ]
+[ 202 218 197 128 ]
+[ 305 278 180 0 ]
+[ 343 224 0 0 ]
+
+step = 7
+[ 90 100 110 116 ]
+[ 202 228 239 212 ]
+[ 314 338 301 192 ]
+[ 413 374 240 0 ]
+Matrix multiplication took 8 clock cycles.
+
+Final product matrix:
+[ 90 100 110 120 ]
+[ 202 228 254 280 ]
+[ 314 356 398 440 ]
+[ 426 484 542 600 ]
+$finish called at time : 135 ns : File "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv" Line 158
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'systolic_array_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 8762.613 ; gain = 12.008 ; free physical = 58622 ; free virtual = 168448
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 30 14:05:01 2025...

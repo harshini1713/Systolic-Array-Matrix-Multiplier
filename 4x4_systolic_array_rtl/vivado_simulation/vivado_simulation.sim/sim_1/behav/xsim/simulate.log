@@ -1,0 +1,81 @@
+Time resolution is 1 ps
+start test
+step =           0
+get_matrix_a[          3] =    13
+get_matrix_b[          3] =     4
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+step =           1
+get_matrix_a[          2] =     9
+get_matrix_a[          3] =    14
+get_matrix_b[          2] =     3
+get_matrix_b[          3] =     8
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+step =           2
+get_matrix_a[          1] =     5
+get_matrix_a[          2] =    10
+get_matrix_a[          3] =    15
+get_matrix_b[          1] =     2
+get_matrix_b[          2] =     7
+get_matrix_b[          3] =    12
+[        52          0          0          0 ]
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+step =           3
+get_matrix_a[          0] =     1
+get_matrix_a[          1] =     6
+get_matrix_a[          2] =    11
+get_matrix_a[          3] =    16
+get_matrix_b[          0] =     1
+get_matrix_b[          1] =     6
+get_matrix_b[          2] =    11
+get_matrix_b[          3] =    16
+[        79         56          0          0 ]
+[       104          0          0          0 ]
+[         0          0          0          0 ]
+[         0          0          0          0 ]
+step =           4
+get_matrix_a[          0] =     2
+get_matrix_a[          1] =     7
+get_matrix_a[          2] =    12
+get_matrix_b[          0] =     5
+get_matrix_b[          1] =    10
+get_matrix_b[          2] =    15
+[        89         86         60          0 ]
+[       167        112          0          0 ]
+[       156          0          0          0 ]
+[         0          0          0          0 ]
+step =           5
+get_matrix_a[          0] =     3
+get_matrix_a[          1] =     8
+get_matrix_b[          0] =     9
+get_matrix_b[          1] =    14
+[        90         98         93         64 ]
+[       197        182        120          0 ]
+[       255        168          0          0 ]
+[       208          0          0          0 ]
+step =           6
+get_matrix_a[          0] =     4
+get_matrix_b[          0] =    13
+[        90        100        107        100 ]
+[       202        218        197        128 ]
+[       305        278        180          0 ]
+[       343        224          0          0 ]
+step =           7
+[        90        100        110        116 ]
+[       202        228        239        212 ]
+[       314        338        301        192 ]
+[       413        374        240          0 ]
+Matrix multiplication took 7 clock cycles.
+result:
+[        90        100        110        120 ]
+[       202        228        254        280 ]
+[       314        356        398        440 ]
+[       426        484        542        600 ]
+$finish called at time : 125 ns : File "/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv" Line 128

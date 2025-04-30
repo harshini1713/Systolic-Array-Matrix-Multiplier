@@ -1,0 +1,61 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Apr 29 21:03:34 2025
+# Process ID: 66250
+# Current directory: /scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl
+# Command line: vivado
+# Log file: /scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado.log
+# Journal file: /scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado.jou
+# Running On: asicfab.ecn.purdue.edu, OS: Linux, CPU Frequency: 2295.805 MHz, CPU Physical cores: 32, Host memory: 269942 MB
+#-----------------------------------------------------------
+start_gui
+create_project vivado_simulation /scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/vivado_simulation -part xc7a200tfbg676-2
+set_property board_part xilinx.com:ac701:part0:1.4 [current_project]
+add_files -norecurse {/scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/pe.v /scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array.v}
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse /scratch/asicfab/a/vkevat/Systolic-Array-for-Matrix-Multiplication/rtl/systolic_array_tb.sv
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+source systolic_array_tb.tcl
+close_sim
+launch_simulation
+source systolic_array_tb.tcl
+close_sim
+launch_simulation
+source systolic_array_tb.tcl
+close_sim
+launch_simulation
+source systolic_array_tb.tcl
+close_sim
+launch_simulation
+source systolic_array_tb.tcl
+close_sim
+launch_simulation
+source systolic_array_tb.tcl
+close_sim
+launch_simulation
+source systolic_array_tb.tcl
+close_sim
+launch_simulation
+source systolic_array_tb.tcl
+close_sim
+launch_simulation
+source systolic_array_tb.tcl
+close_sim
+launch_simulation
+source systolic_array_tb.tcl
+close_sim
+launch_simulation
+source systolic_array_tb.tcl
+close_sim
+launch_simulation
+source systolic_array_tb.tcl
+close_sim
+launch_simulation
+source systolic_array_tb.tcl
+close_sim
